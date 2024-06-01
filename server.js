@@ -2,7 +2,7 @@
 // Whole code is changed.Do merge only my part.
 // New agian
 
-require("dotenv").config({ path: "backend/config/config.env" });
+require("dotenv").config({ path: "config/config.env" });
 
 //<------- uncaught ref err ------->
 
