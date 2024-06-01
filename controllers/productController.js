@@ -314,11 +314,8 @@ exports.getProductsOfSeller = catchAsyncErr(async (req, res, next) => {
 //Controller for Get All products without limit
 exports.getAllProductswp = catchAsyncErr(async (req, res, next) => {
   
-  const apiFeature = new apiFeatures(Product.find(), req.query)
-    .search()
-    .filter();
-
-  const products = await apiFeature.query;
+  // const apiFeature = new apiFeatures(Product.find()
+  const products = await Product.find();
   res.status(200).json({
     success: true,
     products,
