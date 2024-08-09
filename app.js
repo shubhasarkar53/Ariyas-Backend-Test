@@ -12,7 +12,7 @@ const cors = require('cors');
 
 const allowedOrigins = [
   'http://localhost:5173', // Development
-  'https://your-frontend-url-on-vercel.com', // Production
+  'https://ariyas-frontend.vercel.app', // Production
 ];
 
 app.use(cors({
