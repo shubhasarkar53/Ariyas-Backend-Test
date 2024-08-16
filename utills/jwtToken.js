@@ -7,7 +7,7 @@ const sendToken = (user, statusCode, res) => {
     const options = {
       expires: new Date(Date.now() + process.env.EXPIRE_IN * 24 * 60 * 60 * 1000),
       httpOnly: true,
-      // secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NODE_ENV === 'production',
       sameSite: 'None', // Allows cross-site cookies
     };
   
