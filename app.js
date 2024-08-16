@@ -15,6 +15,7 @@ const allowedOrigins = [
   'https://ariyas-frontend.vercel.app', // Production
 ];
 
+
 app.use(cors({
   origin: function(origin, callback){
     if(!origin) return callback(null, true);
